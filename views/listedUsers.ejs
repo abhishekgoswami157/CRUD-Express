@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<body class="user-container">
+   <% users.forEach(user => { %>
+    <div class="user-action">
+        <div>
+            <a href="/users/<%= user.id %>"> <h2 class="user-name"><%= user.name%></h2></a>
+        </div>
+        <div class="user-buttons">
+            <!-- view button -->
+            <a class="btn" href="/users/<%= user.id %>">View</a>
+        
+            <!-- update button -->
+            <a class="btn" href="/users/<%= user.id%>/edit">update</a>
+        
+            <!-- delete button -->
+            <a class="btn" href="/users/<%= user.id %>/delete">delete</a>
+        </div>
+
+    </div>
+   <% }) %>
+       <a class="user-btn btn" href="/users/new">Add User</a>
+</body>
+</html>

@@ -1,0 +1,182 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+.container {
+    max-width: 500px;
+    margin: 4rem auto;
+    
+}
+
+.form {
+    background: rgb(160, 77, 77);
+    border-radius: 4px;
+    padding: 3rem 0;
+    text-align: center;
+}
+legend {
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    color: black
+
+}
+.form-input {
+    padding: 0.8rem;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    border: none;
+    outline: 0;
+}
+#name {
+    width: 80%;
+   
+    margin-top: 2rem;
+}
+#email {
+    width: 80%;
+    margin: 2rem 0;
+}
+#age {
+    width: 80%;
+   
+    margin-bottom: 2rem;
+}
+.form-btn {
+    display: block;
+    margin: 0 auto;
+}
+.btn {
+    padding: 0.8rem 2.5rem;
+    border-radius: 4px;
+    border: none;
+    outline: 0;
+    background: rgb(88, 7, 7);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.btn:hover {
+    color: rgb(214, 209, 209);
+    transform: translateY(-1px);
+    transition: transform 0.1s ease;
+    box-shadow: 4px 4px 10px 1px rgb(94, 49, 40);
+}
+
+/* listedUser */
+.user-container {
+    max-width: 700px;
+    margin: 5rem auto;
+    text-align: center;
+}
+.user-action {
+    border: 1px dashed #21396a;
+    border-radius: 4px;
+    padding: 2.2rem 1rem;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.user-buttons {
+    margin-left: 2rem;
+}
+.user-buttons .btn {
+    background: rgb(42, 87, 126);
+    padding: 0.5rem 2rem;
+    margin-left: 1rem;
+}
+.user-buttons .btn:hover {
+    box-shadow: 4px 4px 10px 1px rgb(148, 145, 145)
+}
+.user-name {
+    color: #21396a;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.user-name:hover {
+    color: rgb(78, 5, 5);
+}
+.user-btn {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+/* single user */
+.single-user {
+    text-align: center;
+    border: 1.5px dotted #21396a;
+    padding: 4rem 0;
+    border-radius: 4px;
+}
+.single-user-name {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #21396a;
+}
+.single-user-email {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    color: #626770
+}
+.single-user-age {
+    font-size: 1.1rem;
+    color: #626770;
+}
+.single-user-btn {
+    background: #21396a;
+    display: inline-block;
+    margin-top: 1.5rem;
+}
